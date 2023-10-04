@@ -1,0 +1,5 @@
+In our code, we create 45 threads (15 large planes and 30 small planes). Each plane starts off idle at the terminal. When the plane is idle we printed that the plane is idle and waited for a specific amount of time. Next, the plane chooses the runway it wants to go on and prints the one it has chosen. If the runway is busy, the plane waits. When the runway is free, we lock the runway and segments and print that they were locked. The plane then takes off and as it is flying (sleeping), it prints the random sleeping duration. The plane then chooses a runway it can land on and prints which one it has chosen. Just like takeoff, it first waits for the runway to be free and then prints when it is landing. Each print statement states the plane's type and thread ID.
+
+We prevent deadlock by locking the runway using a condition variable and a while statement that puts every plane to sleep except the plane that is going on the runway. Also, in the critical section we tried to execute the necessary commands as quickly as possible.
+
+We tried basing our code off of the philosopher's dining code.

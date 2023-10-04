@@ -1,0 +1,631 @@
+Script started on 2023-01-25 04:56:08+00:00 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="111" LINES="30"]
+# gcc   make
+gcc -o prolific prolific.c
+# ./prolific
+Read seed value: 123456
+
+Read seed value (converted to Integer): 123456
+
+Random Child Count: 13
+
+[Parent]: I am waiting for PID: 820 to finish
+[Child, PID: 820]: I am the child and I will wait 1 seconds and exit with code 24 
+[Child, PID: 820]: Now exiting...
+
+[Parent]: I am waiting for PID: 821 to finish
+[Child, PID: 821]: I am the child and I will wait 1 seconds and exit with code 47 
+[Child, PID: 821]: Now exiting...
+
+[Parent]: I am waiting for PID: 822 to finish
+[Child, PID: 822]: I am the child and I will wait 3 seconds and exit with code 19 
+[Child, PID: 822]: Now exiting...
+
+[Parent]: I am waiting for PID: 823 to finish
+[Child, PID: 823]: I am the child and I will wait 2 seconds and exit with code 13 
+[Child, PID: 823]: Now exiting...
+
+[Parent]: I am waiting for PID: 824 to finish
+[Child, PID: 824]: I am the child and I will wait 2 seconds and exit with code 47 
+[Child, PID: 824]: Now exiting...
+
+[Parent]: I am waiting for PID: 825 to finish
+[Child, PID: 825]: I am the child and I will wait 2 seconds and exit with code 5 
+[Child, PID: 825]: Now exiting...
+
+[Parent]: I am waiting for PID: 826 to finish
+[Child, PID: 826]: I am the child and I will wait 1 seconds and exit with code 18 
+[Child, PID: 826]: Now exiting...
+
+[Parent]: I am waiting for PID: 827 to finish
+[Child, PID: 827]: I am the child and I will wait 3 seconds and exit with code 46 
+[Child, PID: 827]: Now exiting...
+
+[Parent]: I am waiting for PID: 828 to finish
+[Child, PID: 828]: I am the child and I will wait 3 seconds and exit with code 34 
+[Child, PID: 828]: Now exiting...
+
+[Parent]: I am waiting for PID: 829 to finish
+[Child, PID: 829]: I am the child and I will wait 1 seconds and exit with code 30 
+[Child, PID: 829]: Now exiting...
+
+[Parent]: I am waiting for PID: 830 to finish
+[Child, PID: 830]: I am the child and I will wait 3 seconds and exit with code 7 
+[Child, PID: 830]: Now exiting...
+
+[Parent]: I am waiting for PID: 831 to finish
+[Child, PID: 831]: I am the child and I will wait 2 seconds and exit with code 22 
+[Child, PID: 831]: Now exiting...
+
+[Parent]: I am waiting for PID: 832 to finish
+[Child, PID: 832]: I am the child and I will wait 2 seconds and exit with code 3 
+[Child, PID: 832]: Now exiting...
+# ./	  ls
+Archive.zip  a.out	 generation.c  prolific.c     seed_slug_1.txt  slug	   solution
+Backup.zip   exp	 getSeed.h     prolific.dSYM  seed_slug_2.txt  slug.c	   solution_output
+Makefile     explorer.c  pro	       seed	      seed_slug_3.txt  slugrace    solution_output.txt
+README.txt   gen	 prolific      seed.txt       seed_slug_4.txt  slugrace.c
+# ./generation
+sh: 4: ./generation: not found
+# make generation.c
+make: Nothing to be done for 'generation.c'.
+# gcc -o gen generation,c  .c
+# /.  ./gen
+Read seed value: 123456
+
+Read seed value (converted to Integer): 123456
+Random Descendant Count: 6
+
+[Parent, PID: 841]: I am waiting for PID 842 to finish
+[Child, PID: 842]: I was called with descendant count=6. I'll have 5 descendant(s).
+# 
+[Parent, PID: 842]: I am waiting for PID 843 to finish
+[Child, PID: 843]: I was called with descendant count=5. I'll have 4 descendant(s).
+
+[Parent, PID: 843]: I am waiting for PID 844 to finish
+[Child, PID: 844]: I was called with descendant count=4. I'll have 3 descendant(s).
+
+[Parent, PID: 844]: I am waiting for PID 845 to finish
+[Child, PID: 845]: I was called with descendant count=3. I'll have 2 descendant(s).
+
+[Parent, PID: 845]: I am waiting for PID 846 to finish
+[Child, PID: 846]: I was called with descendant count=2. I'll have 1 descendant(s).
+
+[Parent, PID: 846]: I am waiting for PID 847 to finish
+[Child, PID: 847]: I was called with descendant count=1. I'll have 0 descendant(s).
+8480
+# ^[[A^[[B^[[B^C
+# gcc -o explorere  explorer.c
+# ./explorer
+Read seed value: 123456
+
+Read seed value (converted to Integer): 123456
+
+Selection #1: [SUCCESS] -> Current Directory: /usr/bin
+[Parent]: I am waiting for PID 855 to finish.
+    [Child, PID: 855]: Executing 'ls -tr' command...
+ c89-gcc		      tput				 xzmore
+ c99-gcc		      toe				 xzless
+ lspgpot		      tic				 xzgrep
+ make-first-existing-target   tabs				 xzfgrep
+ make			      reset				 xzegrep
+ sed			      infotocap				 xzdiff
+ xdg-user-dirs-update	      infocmp				 xzcmp
+ xdg-user-dir		      clear				 xzcat
+ sdiff			      captoinfo				 xz
+ diff3			      x86_64-linux-gnu-gcov-tool	 unxz
+ diff			      x86_64-linux-gnu-gcov-dump	 lzmainfo
+ cmp			      x86_64-linux-gnu-gcov		 rbash
+ deb-systemd-invoke	      x86_64-linux-gnu-gcc-ranlib	 clear_console
+ deb-systemd-helper	      x86_64-linux-gnu-gcc-nm		 bashbug
+ sh			      x86_64-linux-gnu-gcc-ar		 bash
+ dash			      x86_64-linux-gnu-gcc		 apt-mark
+ patch			      x86_64-linux-gnu-g++		 apt-key
+ debconf-show		      x86_64-linux-gnu-cpp		 apt-get
+ debconf-set-selections       gcov-tool				 apt-config
+ debconf-escape		      gcov-dump				 apt-cdrom
+ debconf-copydb		      gcov				 apt-cache
+ debconf-communicate	      gcc-ranlib			 apt
+ debconf-apt-progress	      gcc-nm				 update-alternatives
+ debconf		      gcc-ar				 dpkg-vendor
+ bzexe			      gcc				 dpkg-trigger
+ yes			      g++				 dpkg-statoverride
+ whoami			      cpp				 dpkg-split
+ who			      troff				 dpkg-source
+ wc			      tbl				 dpkg-shlibdeps
+ vdir			      soelim				 dpkg-scansources
+ users			      preconv				 dpkg-scanpackages
+ unlink			      pic				 dpkg-query
+ uniq			      nroff				 dpkg-parsechangelog
+ unexpand		      neqn				 dpkg-name
+ uname			      gtbl				 dpkg-mergechangelogs
+ tty			      grotty				 dpkg-maintscript-helper
+ tsort			      grops				 dpkg-gensymbols
+ truncate		      grog				 dpkg-gencontrol
+ true			      groff				 dpkg-genchanges
+ tr			      gpic				 dpkg-genbuildinfo
+ touch			      geqn				 dpkg-divert
+ timeout		      eqn				 dpkg-distaddfile
+ test			      pinentry-curses			 dpkg-deb
+ tee			      update-mime-database		 dpkg-checkbuilddeps
+ tail			      ul				 dpkg-buildpackage
+ tac			      printerbanner			 dpkg-buildflags
+ sync			      ncal				 dpkg-architecture
+ sum			      lorder				 dpkg
+ stty			      look				 lsattr
+ stdbuf			      hexdump				 chattr
+ stat			      hd				 watchgnupg
+ split			      column				 symcryptrun
+ sort			      colrm				 kbxutil
+ sleep			      colcrt				 gpgv
+ shuf			      col				 gpgtar
+ shred			      calendar				 gpgsplit
+ sha512sum		      cal				 gpgsm
+ sha384sum		      bsd-write				 gpgparsemail
+ sha256sum		      bsd-from				 gpgconf
+ sha224sum		      migrate-pubring-from-classic-gpg	 gpgcompose
+ sha1sum		      watch				 gpg-zip
+ seq			      w.procps				 gpg-wks-server
+ runcon			      vmstat				 gpg-connect-agent
+ rmdir			      uptime				 gpg-agent
+ rm			      top				 gpg
+ realpath		      tload				 dirmngr-client
+ readlink		      snice				 dirmngr
+ pwd			      slabtop				 locale-check
+ ptx			      skill				 x86_64-linux-gnu-strip
+ printf			      pwdx				 x86_64-linux-gnu-strings
+ printenv		      ps				 x86_64-linux-gnu-size
+ pr			      pmap				 x86_64-linux-gnu-readelf
+ pinky			      pkill				 x86_64-linux-gnu-ranlib
+ pathchk		      pgrep				 x86_64-linux-gnu-objdump
+ paste			      kill				 x86_64-linux-gnu-objcopy
+ od			      free				 x86_64-linux-gnu-nm
+ numfmt			      gdbtui				 x86_64-linux-gnu-ld.gold
+ nproc			      gdbserver				 x86_64-linux-gnu-ld.bfd
+ nohup			      gdb-add-index			 x86_64-linux-gnu-ld
+ nl			      gdb				 x86_64-linux-gnu-gprof
+ nice			      gcore				 x86_64-linux-gnu-gold
+ mv			      x86_64				 x86_64-linux-gnu-elfedit
+ mktemp			      whereis				 x86_64-linux-gnu-dwp
+ mknod			      wdctl				 x86_64-linux-gnu-c++filt
+ mkfifo			      wall				 x86_64-linux-gnu-as
+ mkdir			      utmpdump				 x86_64-linux-gnu-ar
+ md5sum.textutils	      unshare				 x86_64-linux-gnu-addr2line
+ md5sum			      umount				 strip
+ ls			      taskset				 strings
+ logname		      su				 size
+ ln			      setterm				 readelf
+ link			      setsid				 ranlib
+ join			      setpriv				 objdump
+ install		      setarch				 objcopy
+ id			      scriptreplay			 nm
+ hostid			      script				 ld.gold
+ head			      rev				 ld.bfd
+ groups			      resizepart			 ld
+ fold			      renice				 gprof
+ fmt			      rename.ul				 gold
+ false			      prlimit				 elfedit
+ factor			      partx				 dwp
+ expr			      nsenter				 c++filt
+ expand			      namei				 as
+ env			      mountpoint			 ar
+ echo			      mount				 addr2line
+ du			      more				 zipdetails
+ dirname		      mesg				 xsubpp
+ dircolors		      mcookie				 splain
+ dir			      lsns				 shasum
+ df			      lsmem				 ptargrep
+ dd			      lslogins				 ptardiff
+ date			      lslocks				 ptar
+ cut			      lsipc				 prove
+ csplit			      lscpu				 podselect
+ cp			      lsblk				 podchecker
+ comm			      logger				 pod2usage
+ cksum			      linux64				 pod2text
+ chown			      linux32				 pod2man
+ chmod			      lastb				 pod2html
+ chgrp			      last				 pl2pm
+ chcon			      ipcs				 piconv
+ cat			      ipcrm				 perlthanks
+ basename		      ipcmk				 perlivp
+ base64			      ionice				 perlbug
+ base32			      i386				 perl5.30.0
+ b2sum			      getopt				 perl5.30-x86_64-linux-gnu
+ arch			      flock				 perl
+'['			      findmnt				 libnetcfg
+ bzmore			      fincore				 json_pp
+ bzless			      fallocate				 instmodsh
+ bzip2recover		      dmesg				 h2xs
+ bzip2			      delpart				 h2ph
+ bzgrep			      chrt				 encguess
+ bzfgrep		      choom				 enc2xs
+ bzegrep		      addpart				 cpan5.30-x86_64-linux-gnu
+ bzdiff			      x86_64-linux-gnu-gcov-tool-9	 cpan
+ bzcmp			      x86_64-linux-gnu-gcov-dump-9	 corelist
+ bzcat			      x86_64-linux-gnu-gcov-9		 sg
+ bunzip2		      x86_64-linux-gnu-gcc-ranlib-9	 passwd
+ fakeroot-tcp		      x86_64-linux-gnu-gcc-nm-9		 newgrp
+ fakeroot-sysv		      x86_64-linux-gnu-gcc-ar-9		 login
+ faked-tcp		      x86_64-linux-gnu-gcc-9		 lastlog
+ faked-sysv		      x86_64-linux-gnu-g++-9		 gpasswd
+ see			      x86_64-linux-gnu-cpp-9		 faillog
+ run-mailcap		      gcov-tool-9			 expiry
+ print			      gcov-dump-9			 chsh
+ edit			      gcov-9				 chfn
+ compose		      gcc-ranlib-9			 chage
+ cautious-launcher	      gcc-nm-9				 nawk
+ perldoc		      gcc-ar-9				 awk
+ ypdomainname		      gcc-9				 w
+ nisdomainname		      g++-9				 pager
+ hostname		      cpp-9				 xxd
+ domainname		      tar				 vimtutor
+ dnsdomainname		      zdump				 vim.basic
+ sensible-pager		      tzselect				 fakeroot
+ sensible-editor	      sprof				 lzma
+ sensible-browser	      sotruss				 unlzma
+ select-editor		      rpcgen				 lzmore
+ which			      pldd				 lzless
+ tempfile		      mtrace				 lzdiff
+ savelog		      localedef				 lzcmp
+ run-parts		      locale				 lzcat
+ ischroot		      ldd				 lzgrep
+ rgrep			      iconv				 lzfgrep
+ file			      getent				 lzegrep
+ grep			      getconf				 pinentry
+ fgrep			      gencat				 write
+ egrep			      catchsegv				 from
+ helpztags		      znew				 cc
+ pidof			      zmore				 c89
+ mawk			      zless				 c99
+ xargs			      zgrep				 c++
+ find			      zforce				 vim
+ whatis			      zfgrep				 vimdiff
+ manpath		      zegrep				 rvim
+ mandb			      zdiff				 rview
+ man-recode		      zcmp				 vi
+ man			      zcat				 view
+ lexgrog		      uncompress			 ex
+ catman			      gzip				 editor
+ apropos		      gzexe
+ tset			      gunzip
+
+Selection #2: [SUCCESS] -> Current Directory: /usr
+[Parent]: I am waiting for PID 856 to finish.
+    [Child, PID: 856]: Executing 'ls -tr' command...
+src  games  local  lib64  sbin	share  bin  lib  lib32	libx32	include
+
+Selection #3: [SUCCESS] -> Current Directory: /home
+[Parent]: I am waiting for PID 857 to finish.
+    [Child, PID: 857]: Executing 'ls -tr' command...
+
+Selection #4: [SUCCESS] -> Current Directory: /proc/sys
+[Parent]: I am waiting for PID 858 to finish.
+    [Child, PID: 858]: Executing 'ls -tr' command...
+net  fs  dev  debug  abi  vm  user  sunrpc  kernel  fscache
+
+Selection #5: [SUCCESS] -> Current Directory: /usr/bin
+[Parent]: I am waiting for PID 859 to finish.
+    [Child, PID: 859]: Executing 'ls -tr' command...
+ c89-gcc		      tput				 xzmore
+ c99-gcc		      toe				 xzless
+ lspgpot		      tic				 xzgrep
+ make-first-existing-target   tabs				 xzfgrep
+ make			      reset				 xzegrep
+ sed			      infotocap				 xzdiff
+ xdg-user-dirs-update	      infocmp				 xzcmp
+ xdg-user-dir		      clear				 xzcat
+ sdiff			      captoinfo				 xz
+ diff3			      x86_64-linux-gnu-gcov-tool	 unxz
+ diff			      x86_64-linux-gnu-gcov-dump	 lzmainfo
+ cmp			      x86_64-linux-gnu-gcov		 rbash
+ deb-systemd-invoke	      x86_64-linux-gnu-gcc-ranlib	 clear_console
+ deb-systemd-helper	      x86_64-linux-gnu-gcc-nm		 bashbug
+ sh			      x86_64-linux-gnu-gcc-ar		 bash
+ dash			      x86_64-linux-gnu-gcc		 apt-mark
+ patch			      x86_64-linux-gnu-g++		 apt-key
+ debconf-show		      x86_64-linux-gnu-cpp		 apt-get
+ debconf-set-selections       gcov-tool				 apt-config
+ debconf-escape		      gcov-dump				 apt-cdrom
+ debconf-copydb		      gcov				 apt-cache
+ debconf-communicate	      gcc-ranlib			 apt
+ debconf-apt-progress	      gcc-nm				 update-alternatives
+ debconf		      gcc-ar				 dpkg-vendor
+ bzexe			      gcc				 dpkg-trigger
+ yes			      g++				 dpkg-statoverride
+ whoami			      cpp				 dpkg-split
+ who			      troff				 dpkg-source
+ wc			      tbl				 dpkg-shlibdeps
+ vdir			      soelim				 dpkg-scansources
+ users			      preconv				 dpkg-scanpackages
+ unlink			      pic				 dpkg-query
+ uniq			      nroff				 dpkg-parsechangelog
+ unexpand		      neqn				 dpkg-name
+ uname			      gtbl				 dpkg-mergechangelogs
+ tty			      grotty				 dpkg-maintscript-helper
+ tsort			      grops				 dpkg-gensymbols
+ truncate		      grog				 dpkg-gencontrol
+ true			      groff				 dpkg-genchanges
+ tr			      gpic				 dpkg-genbuildinfo
+ touch			      geqn				 dpkg-divert
+ timeout		      eqn				 dpkg-distaddfile
+ test			      pinentry-curses			 dpkg-deb
+ tee			      update-mime-database		 dpkg-checkbuilddeps
+ tail			      ul				 dpkg-buildpackage
+ tac			      printerbanner			 dpkg-buildflags
+ sync			      ncal				 dpkg-architecture
+ sum			      lorder				 dpkg
+ stty			      look				 lsattr
+ stdbuf			      hexdump				 chattr
+ stat			      hd				 watchgnupg
+ split			      column				 symcryptrun
+ sort			      colrm				 kbxutil
+ sleep			      colcrt				 gpgv
+ shuf			      col				 gpgtar
+ shred			      calendar				 gpgsplit
+ sha512sum		      cal				 gpgsm
+ sha384sum		      bsd-write				 gpgparsemail
+ sha256sum		      bsd-from				 gpgconf
+ sha224sum		      migrate-pubring-from-classic-gpg	 gpgcompose
+ sha1sum		      watch				 gpg-zip
+ seq			      w.procps				 gpg-wks-server
+ runcon			      vmstat				 gpg-connect-agent
+ rmdir			      uptime				 gpg-agent
+ rm			      top				 gpg
+ realpath		      tload				 dirmngr-client
+ readlink		      snice				 dirmngr
+ pwd			      slabtop				 locale-check
+ ptx			      skill				 x86_64-linux-gnu-strip
+ printf			      pwdx				 x86_64-linux-gnu-strings
+ printenv		      ps				 x86_64-linux-gnu-size
+ pr			      pmap				 x86_64-linux-gnu-readelf
+ pinky			      pkill				 x86_64-linux-gnu-ranlib
+ pathchk		      pgrep				 x86_64-linux-gnu-objdump
+ paste			      kill				 x86_64-linux-gnu-objcopy
+ od			      free				 x86_64-linux-gnu-nm
+ numfmt			      gdbtui				 x86_64-linux-gnu-ld.gold
+ nproc			      gdbserver				 x86_64-linux-gnu-ld.bfd
+ nohup			      gdb-add-index			 x86_64-linux-gnu-ld
+ nl			      gdb				 x86_64-linux-gnu-gprof
+ nice			      gcore				 x86_64-linux-gnu-gold
+ mv			      x86_64				 x86_64-linux-gnu-elfedit
+ mktemp			      whereis				 x86_64-linux-gnu-dwp
+ mknod			      wdctl				 x86_64-linux-gnu-c++filt
+ mkfifo			      wall				 x86_64-linux-gnu-as
+ mkdir			      utmpdump				 x86_64-linux-gnu-ar
+ md5sum.textutils	      unshare				 x86_64-linux-gnu-addr2line
+ md5sum			      umount				 strip
+ ls			      taskset				 strings
+ logname		      su				 size
+ ln			      setterm				 readelf
+ link			      setsid				 ranlib
+ join			      setpriv				 objdump
+ install		      setarch				 objcopy
+ id			      scriptreplay			 nm
+ hostid			      script				 ld.gold
+ head			      rev				 ld.bfd
+ groups			      resizepart			 ld
+ fold			      renice				 gprof
+ fmt			      rename.ul				 gold
+ false			      prlimit				 elfedit
+ factor			      partx				 dwp
+ expr			      nsenter				 c++filt
+ expand			      namei				 as
+ env			      mountpoint			 ar
+ echo			      mount				 addr2line
+ du			      more				 zipdetails
+ dirname		      mesg				 xsubpp
+ dircolors		      mcookie				 splain
+ dir			      lsns				 shasum
+ df			      lsmem				 ptargrep
+ dd			      lslogins				 ptardiff
+ date			      lslocks				 ptar
+ cut			      lsipc				 prove
+ csplit			      lscpu				 podselect
+ cp			      lsblk				 podchecker
+ comm			      logger				 pod2usage
+ cksum			      linux64				 pod2text
+ chown			      linux32				 pod2man
+ chmod			      lastb				 pod2html
+ chgrp			      last				 pl2pm
+ chcon			      ipcs				 piconv
+ cat			      ipcrm				 perlthanks
+ basename		      ipcmk				 perlivp
+ base64			      ionice				 perlbug
+ base32			      i386				 perl5.30.0
+ b2sum			      getopt				 perl5.30-x86_64-linux-gnu
+ arch			      flock				 perl
+'['			      findmnt				 libnetcfg
+ bzmore			      fincore				 json_pp
+ bzless			      fallocate				 instmodsh
+ bzip2recover		      dmesg				 h2xs
+ bzip2			      delpart				 h2ph
+ bzgrep			      chrt				 encguess
+ bzfgrep		      choom				 enc2xs
+ bzegrep		      addpart				 cpan5.30-x86_64-linux-gnu
+ bzdiff			      x86_64-linux-gnu-gcov-tool-9	 cpan
+ bzcmp			      x86_64-linux-gnu-gcov-dump-9	 corelist
+ bzcat			      x86_64-linux-gnu-gcov-9		 sg
+ bunzip2		      x86_64-linux-gnu-gcc-ranlib-9	 passwd
+ fakeroot-tcp		      x86_64-linux-gnu-gcc-nm-9		 newgrp
+ fakeroot-sysv		      x86_64-linux-gnu-gcc-ar-9		 login
+ faked-tcp		      x86_64-linux-gnu-gcc-9		 lastlog
+ faked-sysv		      x86_64-linux-gnu-g++-9		 gpasswd
+ see			      x86_64-linux-gnu-cpp-9		 faillog
+ run-mailcap		      gcov-tool-9			 expiry
+ print			      gcov-dump-9			 chsh
+ edit			      gcov-9				 chfn
+ compose		      gcc-ranlib-9			 chage
+ cautious-launcher	      gcc-nm-9				 nawk
+ perldoc		      gcc-ar-9				 awk
+ ypdomainname		      gcc-9				 w
+ nisdomainname		      g++-9				 pager
+ hostname		      cpp-9				 xxd
+ domainname		      tar				 vimtutor
+ dnsdomainname		      zdump				 vim.basic
+ sensible-pager		      tzselect				 fakeroot
+ sensible-editor	      sprof				 lzma
+ sensible-browser	      sotruss				 unlzma
+ select-editor		      rpcgen				 lzmore
+ which			      pldd				 lzless
+ tempfile		      mtrace				 lzdiff
+ savelog		      localedef				 lzcmp
+ run-parts		      locale				 lzcat
+ ischroot		      ldd				 lzgrep
+ rgrep			      iconv				 lzfgrep
+ file			      getent				 lzegrep
+ grep			      getconf				 pinentry
+ fgrep			      gencat				 write
+ egrep			      catchsegv				 from
+ helpztags		      znew				 cc
+ pidof			      zmore				 c89
+ mawk			      zless				 c99
+ xargs			      zgrep				 c++
+ find			      zforce				 vim
+ whatis			      zfgrep				 vimdiff
+ manpath		      zegrep				 rvim
+ mandb			      zdiff				 rview
+ man-recode		      zcmp				 vi
+ man			      zcat				 view
+ lexgrog		      uncompress			 ex
+ catman			      gzip				 editor
+ apropos		      gzexe
+ tset			      gunzip
+# g gcc -o slug slug g.c
+# / ./l su lug
+Segmentation fault
+# gcc -o slugrace slugrace.c
+# ./slugrace
+[Parent]: I forked off child 872.
+Active Children: 1
+[Parent]: I forked off child 873.
+Active Children: 2
+[Parent]: I forked off child 874.
+Active Children: 3
+
+Read seed value: 55555
+Read seed value (converted to Integer): 55555
+
+Read seed value: 55555
+Read seed value (converted to Integer): 55555
+Delay time is 4 seconds. Coin flip: 0
+I'll get the job done. Eventually...
+[Parent]: I forked off child 875.
+Active Children: 4
+
+
+
+
+
+The race is still ongoing: There are still 4 racing
+
+Read seed value: 456
+Read seed value (converted to Integer): 456
+
+Read seed value: 456
+Read seed value (converted to Integer): 456
+Delay time is 5 seconds. Coin flip: 1
+I'll get the job done. Eventually...
+
+Read seed value: 56789
+Read seed value (converted to Integer): 56789
+
+Read seed value: 56789
+Read seed value (converted to Integer): 56789
+Delay time is 3 seconds. Coin flip: 1
+I'll get the job done. Eventually...
+
+Read seed value: 12345
+Read seed value (converted to Integer): 12345
+
+Read seed value: 12345
+Read seed value (converted to Integer): 12345
+Delay time is 5 seconds. Coin flip: 1
+I'll get the job done. Eventually...
+
+
+
+
+
+The race is still ongoing: There are still 4 racing
+
+
+
+
+
+The race is still ongoing: There are still 4 racing
+
+
+
+
+
+The race is still ongoing: There are still 4 racing
+
+
+
+
+
+The race is still ongoing: There are still 4 racing
+
+
+
+
+
+The race is still ongoing: There are still 4 racing
+
+
+
+
+
+The race is still ongoing: There are still 4 racing
+
+
+
+
+
+The race is still ongoing: There are still 4 racing
+
+
+
+
+
+The race is still ongoing: There are still 4 racing
+
+
+
+
+
+The race is still ongoing: There are still 4 racing
+break time is over! I am running the 'id --group' command.
+0
+
+Slug 873 has crossed the finish line! It took 3.340500467
+
+
+
+The race is still ongoing: There are still 3 racing
+
+Slug 873 has crossed the finish line! It took 3.676154270
+
+
+
+The race is still ongoing: There are still 2 racing
+break time is over! I am running the 'last -i -x' command.
+
+Slug 873 has crossed the finish line! It took 4.6658599
+
+
+
+The race is still ongoing: There are still 1 racing
+
+wtmp begins Fri Jan 20 19:35:32 2023
+Slug 872 has crossed the finish line! It took 4.338463427
+Slug 873 has crossed the finish line! It took 4.338527414
+
+
+[Parent 871]: The race is over! It took 4.671854000 seconds
+# break time is over! I am running the 'id --group' command.
+break time is over! I am running the 'id --group' command.
+0
+0
+exit
+
+Script done on 2023-01-25 04:59:10+00:00 [COMMAND_EXIT_CODE="0"]

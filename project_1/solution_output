@@ -1,0 +1,69 @@
+Script started on 2023-01-21 01:55:21+00:00 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="192" LINES="24"]
+# gcc   make
+make: 'prolific' is up to date.
+# ./prolific
+13
+# gcc - prolific.c -o prolific
+# ./prolific
+Read seed value: 123456
+
+Read seed value (converted to Integer): 123456
+
+Random Child Count: 13
+
+[Parent]: I am waiting for PID: 16922 to finish
+
+[Parent]: I am waiting for PID: 16922 to finish
+
+[Child, PID: 16924]: I am the child and I will wait 1 seconds and exit with code 47 
+
+[Parent]: I am waiting for PID: 16922 to finish
+
+[Parent]: I am waiting for PID: 16922 to finish
+
+[Child, PID: 16925]: I am the child and I will wait 3 seconds and exit with code 19 
+
+
+[Child, PID: 16927]: I am the child and I will wait 2 seconds and exit with code 47 
+[Parent]: I am waiting for PID: 16922 to finish
+
+[Parent]: I am waiting for PID: 16922 to finish
+
+[Parent]: I am waiting for PID: 16922 to finish
+
+[Child, PID: 16929]: I am the child and I will wait 1 seconds and exit with code 18 
+
+[Parent]: I am waiting for PID: 16922 to finish
+
+
+[Child, PID: 16930]: I am the child and I will wait 3 seconds and exit with code 46 
+[Parent]: I am waiting for PID: 16922 to finish
+
+[Parent]: I am waiting for PID: 16922 to finish
+
+[Child, PID: 16932]: I am the child and I will wait 1 seconds and exit with code 30 
+
+[Parent]: I am waiting for PID: 16922 to finish
+
+[Parent]: I am waiting for PID: 16922 to finish
+
+[Parent]: I am waiting for PID: 16922 to finish
+
+[Child, PID: 16935]: I am the child and I will wait 2 seconds and exit with code 3 
+
+# [Child, PID: 16931]: I am the child and I will wait 3 seconds and exit with code 34 
+
+[Child, PID: 16928]: I am the child and I will wait 2 seconds and exit with code 5 
+
+[Child, PID: 16933]: I am the child and I will wait 3 seconds and exit with code 7 
+
+[Child, PID: 16934]: I am the child and I will wait 2 seconds and exit with code 22 
+
+[Child, PID: 16926]: I am the child and I will wait 2 seconds and exit with code 13 
+
+[Child, PID: 16923]: I am the child and I will wait 1 seconds and exit with code 24 
+exi
+sh: 5: exi: not found
+# exit
+
+Script done on 2023-01-21 01:56:38+00:00 [COMMAND_EXIT_CODE="127"]
